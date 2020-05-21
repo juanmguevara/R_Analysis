@@ -1,0 +1,30 @@
+# Question 1: Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+# Question 2: Is the slope of the linear model considered to be zero? Why or why not?
+# Question 3: Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+
+The variable that provides a non-random amount of variance to the mpg values is the vehicale weight. I came to
+this conclusion after looking at the different standard errors that each dependent variables gave. The slope of
+the linear model is not considered to be zero after looking at the generated yvals_multi we can see that the
+values decrease then increase at a staggered rate noting a change in slope for each dependent values. The linear
+model does predict the mpg of MechaCar prototypes effectivley after referencing our p-value. Our p-value being a
+low number notes that our our null hypothesis is bad therfore we reject our null hypothesis.
+
+# The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not 
+# ...exceed 100 pounds per inch. Does the current manufacturing data meet this design specification? Why or why not?
+
+The current manufacturing data does meet the design specification from our psi_summary results we can see
+that the variance_psi is lower than 100 pounds per inch which meets the design specification.
+
+# small writeup of your interpretation and findings for the t-test results.
+
+I did a One-Sample t-Test for the reason that we are doing our analysis per a population mean result of
+1,500 pounds per inch. We can see that our p-value has a high p-value which means that our null hypothesis
+is true.
+
+# Design My Own Study
+
+I would recommend to have a study with cost and fuel efficiency. Questions to ask for these two would be:
+How efficient is the fuel? How many miles per gallon would you get on the car? What is a typical car fuel
+efficiency? Compare the cost and fuel efficiency with our MechaCar Prototype to help us determine if 
+design is viable. We would do a Two-Sample t-Test since we will be comparing our Prototype data with
+typical/common vehical types.
